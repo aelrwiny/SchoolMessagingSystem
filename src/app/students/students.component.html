@@ -1,0 +1,51 @@
+<body class="subpage">
+  <link rel="stylesheet" href="../assets/css/main.css" />
+ 
+  <!-- Main -->
+    <section id="main" class="wrapper">
+      <div class="inner">
+        <header class="align-center">
+          <h1>Elements</h1>
+          <p>Aliquam erat volutpat nam dui </p>
+        </header>
+
+        <!-- Content -->
+          <h2 id="content">Sample Content</h2>
+          <p>Praesent ac adipiscing ullamcorper semper ut amet ac risus. Lorem sapien ut odio odio nunc. Ac adipiscing nibh porttitor erat risus justo adipiscing adipiscing amet placerat accumsan. Vis. Faucibus odio magna tempus adipiscing a non. In mi primis arcu ut non accumsan vivamus ac blandit adipiscing adipiscing arcu metus praesent turpis eu ac lacinia nunc ac commodo gravida adipiscing eget accumsan ac nunc adipiscing adipiscing.</p>
+        <hr class="major" />
+
+          <h3>Table</h3>
+
+            <h4>Default</h4>
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Id</th>
+                    <th>name</th>
+                    <th>Username</th>
+                    <th>email</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let student of systemStudents">
+                    <td>{{student.id}}</td>
+                    <td>{{student.name}}</td>
+                    <td>{{student.username}}</td>
+                    <td>{{student.email}}</td>
+                    <td><a class="button small" routerLink="/message/{{student.id}}/{{student.username}}">Send to</a></td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="2"></td>
+                    <td>100.00</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+      </div>
+      
+    </section>
+</body>

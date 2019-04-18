@@ -1,0 +1,46 @@
+<body class="subpage">
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <!-- Main -->
+    <section id="main" class="wrapper">
+      <div class="inner">
+        <header class="align-center">
+          <h1>Elements</h1>
+          <p>Aliquam erat volutpat nam dui </p>
+        </header>
+
+        <!-- Content -->
+          <h2 id="content">Sample Content</h2>
+          <p>Praesent ac adipiscing ullamcorper semper ut amet ac risus. Lorem sapien ut odio odio nunc. Ac adipiscing nibh porttitor erat risus justo adipiscing adipiscing amet placerat accumsan. Vis. Faucibus odio magna tempus adipiscing a non. In mi primis arcu ut non accumsan vivamus ac blandit adipiscing adipiscing arcu metus praesent turpis eu ac lacinia nunc ac commodo gravida adipiscing eget accumsan ac nunc adipiscing adipiscing.</p>
+        <hr class="major" />
+
+        <form method="post" action="#">
+          <div class="6u">
+            <input type="text" name="name" id="name" [(ngModel)]="newStudent.name" placeholder="Name" />
+          </div>
+          <br/>
+          <div class="6u">
+            <input type="text" name="username" id="username" [(ngModel)]="newStudent.username" placeholder="Username" />
+          </div>
+          <br/>
+          <div class="6u">
+            <input type="email" name="email" id="email" [(ngModel)]="newStudent.email" placeholder="Email" />
+          </div>
+          <br/>
+          <div class="6u">
+            <input type="password" name="password" id="password" [(ngModel)]="newStudent.password" placeholder="Password" />
+          </div>
+          <br/>
+            <div class="row uniform">
+              <div class="12u$">
+                <ul class="actions">
+                  <li><input type="submit" value="Send Message" (click)="addNewStudent()"/></li>
+                  <li><input type="reset" value="Reset" class="alt" (click)="clear()" /></li>
+                </ul>
+              </div>
+            </div>
+        </form>
+
+      </div>
+    </section>
+
+</body>
